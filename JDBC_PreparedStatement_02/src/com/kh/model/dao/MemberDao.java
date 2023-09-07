@@ -70,7 +70,7 @@ public class MemberDao {
 			
 			
 			// 4,5) sql문 전달하면서 실행 후 결과받기(처리된 행 수)
-			result = pstmt.executeUpdate(sql);
+			result = pstmt.executeUpdate();
 			
 			// 6) 트랜잭션 처리
 			if(result > 0) {
